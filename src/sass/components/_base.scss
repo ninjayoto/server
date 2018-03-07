@@ -1,0 +1,24 @@
+::-moz-selection {
+    color: white;
+    background: $brand-primary;
+}
+
+::selection {
+    color: white;
+    background: $brand-primary;
+}
+
+#root {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    width: 1300px;
+    padding: 0 30px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.page-content {
+    width: 100%;
+    flex:1;
+}

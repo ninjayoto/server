@@ -1,0 +1,28 @@
+label {
+    font-weight: 600;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    border-radius: 0;
+    border: 1px solid #E7E4E4;
+    height: 36px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+
+    &:focus {
+        border: 1px solid $brand-primary;
+    }
+}
+
+input[type="button"] {
+    background: $brand-primary;
+    min-width: 100px;
+    height: 36px;
+    color: white;
+    border: none;
+    border-radius: none;
+    padding: 5px 0;
+    outline: none;
+    cursor: pointer;
+}

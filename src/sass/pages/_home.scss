@@ -1,0 +1,56 @@
+.currently-reading {
+    width: 100%;
+    background: #E7E4E4;
+    margin-top: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+
+    .currently-reading__header {
+        overflow: hidden;
+
+        .title {
+            float: left;
+            background: white;
+            font-size: 20px;
+            font-weight: 600;
+            padding: 10px;
+            margin-left: 2px;
+        }
+
+        .nav {
+            float: right;
+            margin-right: 2px;
+
+            a {
+                float: left;
+                width: 51px;
+                height: 40px;
+                background: white;
+                text-align: center;
+                margin-right: 30px;
+                padding-top: 11px;
+                box-sizing: border-box;
+                outline: none;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &:hover {
+                    background: $brand-primary;
+
+                    svg {
+                        g {
+                            stroke: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .currently-reading__books {
+        margin-top: 30px;
+        min-height: 270px;
+    }
+}

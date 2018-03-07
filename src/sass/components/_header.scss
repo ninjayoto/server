@@ -1,0 +1,93 @@
+.header {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    padding-top: 8px;
+    box-sizing: border-box;
+
+    &__logo {
+        position: absolute;
+        left: 50%;
+        margin-left: -42px;
+        cursor: pointer;
+        outline: none;
+    }
+
+    &__nav {
+        float: right;
+        margin-top: 15px;
+
+        a {
+            float: left;
+            text-decoration: none;
+            color: $brand-secondary;
+            margin-right: 30px;
+            outline: none;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            svg {
+                float: left;
+            }
+
+            label {
+                float: left;
+                margin: 1px 0 0 5px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__menu-dropdown {
+        display: none;
+        position: absolute;
+        width: 210px;
+        background: white;
+        right: 0;
+        margin-top: 48px;
+        border: 1px solid #E7E4E4;
+        padding: 7px 0;
+        box-sizing: border-box;
+
+        a {
+            display: block;
+            text-decoration: none;
+            color: #676767;
+            font-weight: 600;
+            padding: 6px 20px;
+            font-size: 16px;
+            margin-bottom: 5px;
+            outline: none;
+            overflow: hidden;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            svg, label {
+                float: left;
+            }
+
+            svg {
+                margin-right: 8px;
+            }
+
+            &:hover {
+                background: $brand-primary;
+                color: white;
+
+                svg {
+                    g, path {
+                        fill: white;
+                    }
+                }
+
+                label {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

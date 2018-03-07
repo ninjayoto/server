@@ -1,0 +1,36 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    color: $brand-secondary;
+}
+
+.header {
+    .header__logo {
+        font-family: 'Rancho', cursive;
+        font-size: 38px;
+        color: $brand-primary;
+        text-decoration: none;
+    }
+
+    .header__nav {
+        font-weight: 600;
+
+        a {
+            &:hover {
+                color: $brand-primary;
+
+                svg {
+                    g {
+                        fill: $brand-primary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="button"], label {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+}
